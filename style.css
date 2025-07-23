@@ -1,0 +1,54 @@
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      overflow-x: hidden;
+    }
+
+    .img-overlay {
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: 10px;
+    }
+
+    .card {
+      height: 100%;
+    }
+
+    .card img {
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .translate-middle-xs-up {
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 3;
+    }
+
+    /* For XS & SM */
+    @media (max-width: 767.98px) {
+      .translate-middle-xs-up {
+        width: 75% !important;
+        top: 75% !important;
+        transform: translate(-50%, -50%) !important;
+      }
+    }
+
+    @media (max-width: 320px) {
+      .translate-middle-xs-up {
+        width: 60% !important;
+        top: 66% !important;
+        transform: translate(-50%, -50%) !important;
+      }
+    }
+
+    /* For MD and above */
+    @media (min-width: 768px) {
+      .translate-middle-xs-up {
+        width: 50% !important;
+        top: 72%;
+        transform: translate(-50%, -50%);
+      }
+    }
